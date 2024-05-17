@@ -58,3 +58,23 @@ form button {
     border: none;
     cursor: pointer;
 }
+/* Desktop - 1 */
+form Desktop {
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+}
+
+form Rectangle {/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 149px;
+left: 0px;
+top: 0px;
+
+}
+
+
