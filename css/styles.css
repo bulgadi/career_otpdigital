@@ -13,7 +13,7 @@ header {
 }
 header .logo {
     font-size: 24px;
-    color: white;
+    color: rgb(194, 59, 59);
 }
 nav ul {
     list-style: none;
