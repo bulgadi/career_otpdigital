@@ -1,78 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #0056a3;
-    color: white;
-    padding: 1rem 0;
     text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    font-size: 3em;
     margin: 0;
-    display: flex;
 }
 
-nav ul li {
-    margin: 0 1rem;
+header p {
+    font-size: 1.2em;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    background: url('path/to/your/image.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-}
-
-.vacancies {
-    padding: 2rem;
+section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.vacancy {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-}
-
-footer {
-    background-color: #0056a3;
-    color: white;
+h2 {
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    color: #333333;
 }
+
+.rating {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+.tech-item {
+    margin-bottom: 20px;
+}
+
+.tech-item h3 {
+    margin: 0;
+    color: #333333;
+}
+
+.tech-item p {
+    margin: 5px 0 0 0;
+    color: #666666;
+}
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
