@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна | OTP Digital</title>
+    <title>OTP Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="OTP Digital Logo" id="logo">
+        <div class="logo">OTP Digital</div>
         <nav>
             <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="culture.html">Наша культура</a></li>
-                <li><a href="careers.html">Кар'єра</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h1>Ласкаво просимо в OTP Digital!</h1>
-        <p>Тут короткий опис мети компанії або вітаючий текст.</p>
+    <section id="hero">
+        <h1>Welcome to OTP Digital</h1>
+        <p>Your tagline here</p>
     </section>
-    <footer>
-        <p>© 2024 OTP Digital. Всі права захищені.</p>
-    </footer>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about the company.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Service 1</h3>
+            <p>Description of service 1.</p>
+        </div>
+        <div class="service">
+            <h3>Service 2</h3>
+            <p>Description of service 2.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="scripts.js"></script>
 </body>
 </html>
