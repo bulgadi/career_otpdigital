@@ -8,23 +8,31 @@ body {
   line-height: 1.6;
 }
 
+/* Хедер */
 header {
-  background: linear-gradient(135deg, #4CAF50 0%, #1abc9c 100%);
-  color: white;
-  padding: 2rem 0;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.5rem;
+  padding: 1rem 0;
+  background-color: #4CAF50;
+  color: white;
 }
 
 header nav ul {
   list-style-type: none;
   padding: 0;
   margin: 1rem 0 0;
+  background-color: #4CAF50;
 }
 
 header nav ul li {
@@ -43,6 +51,7 @@ header nav ul li a:hover {
   color: #d9d9d9;
 }
 
+/* Секції */
 section {
   padding: 4rem 2rem;
   margin: 2rem auto;
@@ -69,6 +78,7 @@ section img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Списки вакансій */
 .job-listing {
   background-color: #f9f9f9;
   padding: 1.5rem;
@@ -108,6 +118,7 @@ section img {
   background-color: #45a049;
 }
 
+/* Футер */
 footer {
   text-align: center;
   padding: 2rem;
