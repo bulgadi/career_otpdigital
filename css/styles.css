@@ -1,73 +1,41 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #fff;
 }
 
 header {
+    background-color: #006837; /* Темно-зелений */
+    color: white;
+    padding: 2px 5px;
     text-align: center;
-    padding: 50px 0;
-    color: #ffffff;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-header p {
-    font-size: 1.2em;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-section {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    margin: 20px auto;
+section.hero {
+    background-color: #009948; /* Світло-зелений */
+    color: white;
     padding: 20px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
     text-align: center;
-    color: #333333;
 }
 
-.rating {
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-size: 1.5em;
-    color: #ffd700;
-}
-
-.tech-item {
-    margin-bottom: 20px;
-}
-
-.tech-item h3 {
-    margin: 0;
-    color: #333333;
-}
-
-.tech-item p {
-    margin: 5px 0 0 0;
-    color: #666666;
-}
-
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
-
-    .hero {
-        height: 40vh;
-    }
-
-    .vacancies {
-        padding: 1rem;
-    }
-
-    .vacancy {
-        margin-bottom: 0.5rem;
-    }
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
