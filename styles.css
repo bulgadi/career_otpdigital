@@ -65,31 +65,37 @@ section {
 }
 
 #home {
-  background: url('images/c8a56736-016e-49b0-ab7d-46d04175691c.jpeg') no-repeat center center/cover;
+  background: linear-gradient(135deg, #90ee90, #66cc66);
   color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .home-content {
   animation: fadeInUp 1.5s ease-in-out;
-  margin-top: 100px;
+  margin-top: 50px;
+  position: relative;
 }
 
-.home-content h1 {
+.text-content {
+  z-index: 10;
+}
+
+.text-content h1 {
   font-size: 48px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.home-content p {
+.text-content p {
   font-size: 24px;
   margin: 20px 0;
 }
 
-.home-content .cta-button {
+.text-content .cta-button {
   background-color: #90ee90; /* Light green color */
   color: white;
   border: none;
@@ -102,9 +108,33 @@ section {
   display: inline-block;
 }
 
-.home-content .cta-button:hover {
+.text-content .cta-button:hover {
   background-color: #66cc66;
   transform: scale(1.05);
+}
+
+.image-arch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  z-index: 5;
+}
+
+.image-arch img {
+  width: 20%;
+  border-radius: 10px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.image-arch img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 #culture, #careers, #contact {
