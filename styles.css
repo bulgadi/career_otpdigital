@@ -1,134 +1,115 @@
-/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
 }
 
-/* Хедер */
 header {
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  padding: 1rem 0;
-  background-color: #4CAF50;
+  background-color: #2c3e50;
   color: white;
+  padding: 10px 0;
 }
 
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1rem 0 0;
-  background-color: #4CAF50;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
+nav .logo {
+  font-size: 24px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-  color: #d9d9d9;
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-/* Секції */
-section {
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+nav ul li {
+  margin-left: 20px;
 }
 
-section h2 {
-  color: #4CAF50;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-section p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-section img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Списки вакансій */
-.job-listing {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  margin-top: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-listing:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.job-listing h3 {
-  margin-top: 0;
-  color: #333;
-  font-size: 1.5rem;
-}
-
-.job-listing p {
-  margin: 0.5rem 0 1rem;
-  font-size: 1rem;
-}
-
-.job-listing a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #4CAF50;
+nav ul li a {
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
-.job-listing a:hover {
-  background-color: #45a049;
-}
-
-/* Футер */
-footer {
+section {
+  padding: 60px 0;
   text-align: center;
-  padding: 2rem;
-  background-color: #333;
-  color: white;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
-footer p {
-  margin: 0;
+#home {
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content h1 {
+  font-size: 48px;
+}
+
+.home-content p {
+  font-size: 24px;
+}
+
+#culture, #careers, #contact {
+  background-color: #ecf0f1;
+}
+
+.culture-content, .careers-content, .contact-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.careers-content .job-listings {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.careers-content .job {
+  background-color: white;
+  border: 1px solid #bdc3c7;
+  padding: 20px;
+  margin: 10px;
+  width: 45%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.careers-content .job h3 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.careers-content .job p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.careers-content .job button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
