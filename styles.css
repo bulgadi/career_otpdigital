@@ -39,6 +39,18 @@ header nav ul li a {
   font-weight: bold;
 }
 
+header .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .hero-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 header h1 {
   margin: 0;
   font-size: 2.5rem;
@@ -78,14 +90,33 @@ h2:after {
   left: 0;
 }
 
-.about-grid, .why-grid, .vacancy-list {
+.about-photo, .product-photo {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.product-rating {
+  background: #A8E063;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.why-grid, .vacancy-list {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   animation: fadeIn 1s ease-in-out;
 }
 
-.about-item, .why-item, .vacancy {
+.why-item, .vacancy {
   background: #f4f4f4;
   padding: 1rem;
   border-radius: 10px;
@@ -94,12 +125,12 @@ h2:after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-item:hover, .why-item:hover, .vacancy:hover {
+.why-item:hover, .vacancy:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.about-item h3, .why-item h3 {
+.why-item h3, .vacancy h3 {
   margin-top: 0;
   color: #56AB2F;
 }
@@ -115,12 +146,6 @@ footer {
 footer .container {
   max-width: 1200px;
   margin: auto;
-}
-
-img.about-photo {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 2rem;
 }
 
 @keyframes fadeIn {
