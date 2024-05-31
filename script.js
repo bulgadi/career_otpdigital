@@ -1,9 +1,7 @@
 // script.js
 // Add your JavaScript here
-// Example: Fetch job listings from an API and dynamically add them to the page
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Example job listings
     const jobs = [
         {
             title: 'Назва вакансії 1',
