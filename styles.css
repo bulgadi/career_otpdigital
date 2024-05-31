@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #f9f9f9;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -12,6 +13,9 @@ header {
   color: white;
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .container {
@@ -50,6 +54,7 @@ header nav ul li a:hover {
 }
 
 .hero {
+  height: 100vh;
   background: linear-gradient(135deg, #0A5C5A, #8DC6A5);
   color: white;
   text-align: center;
@@ -58,6 +63,7 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero h1 {
@@ -119,6 +125,18 @@ header nav ul li a:hover {
   margin-bottom: 40px;
   font-size: 36px;
   color: #003F63;
+  position: relative;
+}
+
+.job-listings h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: #F6A800;
 }
 
 .job {
