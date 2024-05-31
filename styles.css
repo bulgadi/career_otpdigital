@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #0A5C5A, #8DC6A5);
   color: #333;
   scroll-behavior: smooth;
 }
@@ -55,7 +55,7 @@ header nav ul li a:hover {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #0A5C5A, #8DC6A5);
+  background: linear-gradient(135deg, #A1C349, #C1DF34);
   color: white;
   text-align: center;
   padding: 100px 20px;
