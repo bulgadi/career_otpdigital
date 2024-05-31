@@ -1,3 +1,4 @@
-// script.js
-
-// Add any JavaScript functionality if needed
+document.getElementById('application-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Форма подана успішно!');
+});
