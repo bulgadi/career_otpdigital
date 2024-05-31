@@ -8,16 +8,17 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
+  color: #333;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
 
 .header {
-  background: #282c34;
+  background: #333;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -62,6 +63,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  margin-top: 80px;
 }
 
 .hero h2 {
@@ -92,7 +94,6 @@ body {
 .about, .jobs, .contact {
   padding: 4rem 0;
   background: #fff;
-  margin-top: 100px;
 }
 
 .jobs {
@@ -135,7 +136,7 @@ button:hover {
 }
 
 footer {
-  background: #282c34;
+  background: #333;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
