@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  background: #333;
+  background: #2c3e50;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -44,18 +44,18 @@ body {
 }
 
 .header nav ul li a {
-  color: #61dafb;
+  color: #ecf0f1;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .header nav ul li a:hover {
-  color: #21a1f1;
+  color: #bdc3c7;
 }
 
 .hero {
-  background: url('hero-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
   color: #fff;
   height: 100vh;
   display: flex;
@@ -64,6 +64,7 @@ body {
   text-align: center;
   padding: 0 20px;
   margin-top: 80px;
+  border-radius: 15px;
 }
 
 .hero h2 {
@@ -79,8 +80,8 @@ body {
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #61dafb;
-  color: #282c34;
+  background: #3498db;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -88,16 +89,18 @@ body {
 }
 
 .cta-button:hover {
-  background: #21a1f1;
+  background: #2980b9;
 }
 
 .about, .jobs, .contact {
   padding: 4rem 0;
   background: #fff;
+  border-radius: 15px;
+  margin-top: 2rem;
 }
 
 .jobs {
-  background: #f9f9f9;
+  background: #ecf0f1;
 }
 
 .job-listing {
@@ -113,21 +116,22 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  background: #61dafb;
-  color: #282c34;
+.full-description-button {
+  background: #3498db;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
   transition: background 0.3s;
 }
 
-button:hover {
-  background: #21a1f1;
+.full-description-button:hover {
+  background: #2980b9;
 }
 
-.contact input, .contact textarea {
+.contact input {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
@@ -136,7 +140,7 @@ button:hover {
 }
 
 footer {
-  background: #333;
+  background: #2c3e50;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
