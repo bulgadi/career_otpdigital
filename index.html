@@ -9,59 +9,72 @@
 <body>
     <header>
         <div class="hero">
-            <h1>Привіт! Ми команда OTP Digital</h1>
-            <p>Створюємо сучасний мобільний банкінг</p>
+            <div class="hero-content">
+                <h1>Привіт! Ми команда OTP Digital</h1>
+                <p>Створюємо сучасний мобільний банкінг</p>
+                <a href="#about" class="btn">Дізнатись більше</a>
+            </div>
         </div>
     </header>
 
     <section id="about">
-        <h2>Про нас</h2>
-        <p>Ми робимо лагідний мобільний банкінг – застосунок OTP Bank UA. Все почалося у березні 2020-го як інноваційний стартап у рамках OTP Group (12 країн, HQ – Budapest). Продукт починався як помічник з ведення кредитів, а зараз виріс до повноцінного мобільного банкінгу.</p>
-        <p>Продукт будувався з нуля, що дозволило вибрати найновіші технології та практики: Cloud native stack, DevSecOps, Android і iOS SDK з підтримкою останніх версій.</p>
+        <div class="container">
+            <h2>Про нас</h2>
+            <p>Ми робимо лагідний мобільний банкінг – застосунок OTP Bank UA. Все почалося у березні 2020-го як інноваційний стартап у рамках OTP Group (12 країн, HQ – Budapest). Продукт починався як помічник з ведення кредитів, а зараз виріс до повноцінного мобільного банкінгу.</p>
+            <p>Продукт будувався з нуля, що дозволило вибрати найновіші технології та практики: Cloud native stack, DevSecOps, Android і iOS SDK з підтримкою останніх версій.</p>
+        </div>
     </section>
 
     <section id="advantages">
-        <h2>Наші переваги</h2>
-        <ul>
-            <li><strong>Місія:</strong> Створювати такі технологічні рішення, щоб користувач відчував, що OTP Bank UA справді лагідний мобільний банкінг.</li>
-            <li><strong>Візія:</strong> Agile розробка з використанням найкращих практик та технологій для розробки продукту, який полюбиться клієнтам.</li>
-            <li><strong>Принципи:</strong> Спершу турбота про клієнта, функціональні команди, прозорість, постійне вдосконалення, технічна досконалість.</li>
-        </ul>
+        <div class="container">
+            <h2>Наші переваги</h2>
+            <ul>
+                <li><strong>Місія:</strong> Створювати такі технологічні рішення, щоб користувач відчував, що OTP Bank UA справді лагідний мобільний банкінг.</li>
+                <li><strong>Візія:</strong> Agile розробка з використанням найкращих практик та технологій для розробки продукту, який полюбиться клієнтам.</li>
+                <li><strong>Принципи:</strong> Спершу турбота про клієнта, функціональні команди, прозорість, постійне вдосконалення, технічна досконалість.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="vacancies">
-        <h2>Вакансії</h2>
-        <div class="vacancy">
-            <h3>Java Engineer</h3>
-            <p>Ми шукаємо досвідченого Java Engineer для роботи над нашим мобільним банкінгом.</p>
-            <button>Подати заявку</button>
+        <div class="container">
+            <h2>Вакансії</h2>
+            <div class="vacancy">
+                <h3>Java Engineer</h3>
+                <p>Ми шукаємо досвідченого Java Engineer для роботи над нашим мобільним банкінгом.</p>
+                <button>Подати заявку</button>
+            </div>
+            <!-- Додайте інші вакансії аналогічним чином -->
         </div>
-        <!-- Додайте інші вакансії аналогічним чином -->
     </section>
 
     <section id="team">
-        <h2>Наша команда</h2>
-        <p>Процеси вже сталі, але не забюрократизовані. Всі почуваються своїми: є певне відчуття сімейності, можна чесно і щиро висловлюватися, помилятися і просити про допомогу.</p>
-        <img src="team.jpg" alt="Фото команди">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <p>Процеси вже сталі, але не забюрократизовані. Всі почуваються своїми: є певне відчуття сімейності, можна чесно і щиро висловлюватися, помилятися і просити про допомогу.</p>
+            <img src="team.jpg" alt="Фото команди">
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Контакти</h2>
-        <form id="application-form">
-            <label for="name">Ім'я:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Повідомлення:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <label for="resume">Резюме:</label>
-            <input type="file" id="resume" name="resume" required>
-            
-            <button type="submit">Відправити</button>
-        </form>
+        <div class="container">
+            <h2>Контакти</h2>
+            <form id="application-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <label for="resume">Резюме:</label>
+                <input type="file" id="resume" name="resume" required>
+                
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
     </section>
 
     <script src="scripts.js"></script>
