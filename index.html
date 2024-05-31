@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вакансії - OTP Digital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>OTP Digital Careers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="logo"><img src="path-to-otp-logo.png" alt="OTP Digital"></div>
+            <h1>OTP Digital</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Про нас</a></li>
-                    <li><a href="#">Вакансії</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
-            <h1>Приєднуйтесь до нашої команди</h1>
-            <p>Ми завжди шукаємо талановитих людей, щоб приєднатися до нашої команди.</p>
-            <a href="#job-listings" class="cta-button">Переглянути вакансії</a>
+            <h2>Join our team at OTP Digital</h2>
+            <p>We are looking for talented individuals to join our team and help us create amazing digital experiences.</p>
         </div>
     </section>
 
-    <section id="job-listings" class="job-listings">
+    <section id="about" class="about">
         <div class="container">
-            <h2>Наші вакансії</h2>
-            <div class="job">
-                <h3>Назва вакансії 1</h3>
-                <p>Опис вакансії 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Детальніше</button>
+            <h2>About Us</h2>
+            <p>At OTP Digital, we are committed to innovation and excellence. Our team is passionate about technology and dedicated to delivering the best digital solutions for our clients.</p>
+        </div>
+    </section>
+
+    <section id="jobs" class="jobs">
+        <div class="container">
+            <h2>Job Openings</h2>
+            <div class="job-listing">
+                <h3>Frontend Developer</h3>
+                <p>We are looking for a skilled frontend developer with experience in HTML, CSS, and JavaScript.</p>
+                <button>Apply Now</button>
             </div>
-            <div class="job">
-                <h3>Назва вакансії 2</h3>
-                <p>Опис вакансії 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Детальніше</button>
+            <div class="job-listing">
+                <h3>Backend Developer</h3>
+                <p>We are seeking a talented backend developer with knowledge of server-side technologies.</p>
+                <button>Apply Now</button>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section id="contact" class="contact">
         <div class="container">
-            <p>&copy; 2024 OTP Digital. Всі права захищені.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 OTP Digital. All rights reserved.</p>
         </div>
     </footer>
 
