@@ -1,6 +1,3 @@
-// script.js
-// Add your JavaScript here
-
 document.addEventListener('DOMContentLoaded', function() {
     const jobs = [
         {
