@@ -79,34 +79,20 @@ p {
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.advantages-grid, .vacancies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
-}
-
-li::before {
-  content: '✔';
-  color: #ff6347;
-  position: absolute;
-  left: 0;
-}
-
-.vacancy {
-  border: 1px solid #004080;
+.advantage, .vacancy {
+  background: #f9f9f9;
   padding: 20px;
-  margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.vacancy:hover {
+.advantage:hover, .vacancy:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
