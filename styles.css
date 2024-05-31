@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
 }
@@ -17,14 +17,19 @@ body {
 }
 
 .header {
-  background: #333;
+  background: #282c34;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
 .header nav ul {
@@ -34,46 +39,103 @@ body {
 
 .header nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .header nav ul li a {
-  color: #fff;
+  color: #61dafb;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #21a1f1;
 }
 
 .hero {
-  background: #555;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
   color: #fff;
-  padding: 4rem 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #61dafb;
+  color: #282c34;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #21a1f1;
 }
 
 .about, .jobs, .contact {
-  padding: 2rem 0;
+  padding: 4rem 0;
+  background: #fff;
+  margin-top: 100px;
+}
+
+.jobs {
+  background: #f9f9f9;
 }
 
 .job-listing {
   background: #fff;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem 0;
   border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.job-listing:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
-  background: #333;
-  color: #fff;
+  background: #61dafb;
+  color: #282c34;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: #555;
+  background: #21a1f1;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 footer {
-  background: #333;
+  background: #282c34;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
